@@ -3,21 +3,29 @@ var ctx = document.getElementById('myChart').getContext('2d');
           type: 'polarArea',
           data: {
             labels: [
-              'Red',
-              'Green',
-              'Yellow',
-              'Grey',
-              'Blue'
+              'Paid Work',
+              'Education',
+              'Care for household members',
+              'Housework',
+              'Shopping',
+              'Other unpaid work',
+              'Sleep',
+              'Eating and drinking',
+              'Personal Care'
             ],
             datasets: [{
-              label: 'My First Dataset',
-              data: [11, 16, 7, 3, 14],
+              label: 'Time Use',
+              data: [315, 25, 23, 103, 20, 33, 542, 100, 52],
               backgroundColor: [
                 'rgb(255, 99, 132)',
                 'rgb(75, 192, 192)',
                 'rgb(255, 205, 86)',
+                'rgb(155, 227, 125)',
+                'rgb(54, 162, 235)',
                 'rgb(201, 203, 207)',
-                'rgb(54, 162, 235)'
+                'rgb(150, 68, 119)',
+                'rgb(109, 91, 171)',
+                'rgb(237, 24, 38)'
               ]
             }]
           },
@@ -25,12 +33,17 @@ var ctx = document.getElementById('myChart').getContext('2d');
             responsive: true,
             plugins: {
               legend: {
+                display: true,
                 position: 'top',
               },
               title: {
                 display: true,
-                text: 'Chart.js Polar Area Chart'
+                text: 'How the population in China spends their time'
+              },
+              //Chart subtitle
+              subtitle: {
+                display: true,
+                text: 'Sleep and work take up most of a person\'s daily life in China.'
               }
             }
-          }
-        });
+          }});
