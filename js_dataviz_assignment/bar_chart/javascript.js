@@ -22,11 +22,27 @@ var myChart = new Chart(ctx, {
               },
             title: {
                 display: true,
-                text: 'Dua Lipa\'s Top Streamed Songs in 2023',
+                text: 'Dua Lipa\'s Top Streamed Songs as of 2023',
                 font: {
                     size: 18
                 }
             },
             subtitle: {
                 display: true,
-                text: 'Including her features, Dua Lipa\'s top five tracks collectively earned over 8.5 billion streams. \"Don\'t Start Now\" 
+                text: 'Dua Lipa\'s top five tracks collectively earned over 8.5 billion streams. \"Don\'t Start Now\" was the 20th most streamed song on Spotify.',
+                padding: {
+                    bottom: 20,
+                }
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: 'Streams'
+                }
+            }
+        },
+    },
+});
