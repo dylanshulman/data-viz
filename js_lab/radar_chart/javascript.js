@@ -27,4 +27,23 @@ var ctx = document.getElementById('myChart').getContext('2d');
                 'rgb(109, 91, 171)',
                 'rgb(237, 24, 38)'
               ]
-       
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                display: true,
+                position: 'top',
+              },
+              title: {
+                display: true,
+                text: 'How the population in China spends their time'
+              },
+              //Chart subtitle
+              subtitle: {
+                display: true,
+                text: 'Sleep and work take up most of a person\'s daily life in China.'
+              }
+            }
+          }});
